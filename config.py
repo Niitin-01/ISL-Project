@@ -1,0 +1,14 @@
+# Expression thresholds
+MOUTH_WIDTH_THRESHOLD = 0.07
+MOUTH_HEIGHT_THRESHOLD = 0.05
+
+# Head movement thresholds
+HEAD_MOVEMENT_X_THRESHOLD = 0.015
+HEAD_MOVEMENT_Y_THRESHOLD = 0.02
+
+# Eye gaze thresholds
+GAZE_LEFT_THRESHOLD = 0.4
+GAZE_RIGHT_THRESHOLD = 0.6
+
+# Smoothing window
+SMOOTHING_WINDOW = 10
