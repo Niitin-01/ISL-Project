@@ -28,20 +28,28 @@ Unlike many ISL systems that focus only on hand gestures, this project emphasize
 ---
 
 ## 🧱 System Architecture
+
+```text
 Video Input (Webcam)
-↓
+        │
+        ▼
 Face Detection (MediaPipe)
-↓
+        │
+        ▼
 Feature Extraction
-├── Facial Expression
-├── Head Movement
-└── Eye Gaze
-↓
+   ├── Facial Expression
+   ├── Head Movement
+   └── Eye Gaze
+        │
+        ▼
 Temporal Smoothing
-↓
+        │
+        ▼
 Text Integration Module
-↓
+        │
+        ▼
 Final Output Sentence
+```
 
 ---
 
@@ -74,24 +82,28 @@ Gaze: Looking Left
 ---
 
 ## 📁 Project Structure
+
+```text
 ISL_PROJECT/
-│── main.py
-│── config.py
-│── requirements.txt
-│── README.md
-│── .gitignore
+│
+├── main.py
+├── config.py
+├── requirements.txt
+├── README.md
+├── .gitignore
 │
 ├── modules/
-│ ├── video_capture.py
-│ ├── face_detection.py
-│ ├── expression.py
-│ ├── head_movement.py
-│ ├── gaze.py
-│ └── integration.py
+│   ├── video_capture.py
+│   ├── face_detection.py
+│   ├── expression.py
+│   ├── head_movement.py
+│   ├── gaze.py
+│   └── integration.py
 │
-├── utils/
-│ ├── math_utils.py
-│ └── smoothing.py
+└── utils/
+    ├── math_utils.py
+    └── smoothing.py
+```
 
 ---
 
