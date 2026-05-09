@@ -1,3 +1,6 @@
+import config
+
+
 class GazeDetector:
     def __init__(self):
         pass
@@ -27,9 +30,9 @@ class GazeDetector:
         print(f"[GAZE] Ratio: {ratio:.2f}")
 
         # Classification
-        if ratio < 0.35:
+        if ratio < config.GAZE_LEFT_THRESHOLD:
             return "Looking Left"
-        elif ratio > 0.65:
+        elif ratio > config.GAZE_RIGHT_THRESHOLD:
             return "Looking Right"
         else:
             return "Center"
